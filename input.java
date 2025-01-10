@@ -7,6 +7,7 @@ public class input {
         String name = sc.nextLine();
         // nextInt()
         // nextFloat()
-         System.out.println(name);
+        System.out.println(name);
+        sc.close();
     }
 }
