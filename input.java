@@ -9,5 +9,6 @@ public class input {
         // nextFloat()
         System.out.println(name);
         sc.close();
+        
     }
 }
