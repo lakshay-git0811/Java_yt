@@ -21,5 +21,6 @@ public class Conditions_03 {
             default:
                 System.out.println("Invalid Button");
         }
+        sc.close();
     }
 }

@@ -10,5 +10,7 @@ public class Conditions_01 {
         } else {
             System.out.println("Not Adult");
         }
+        sc.close();
     }
 }
+
