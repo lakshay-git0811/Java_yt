@@ -83,12 +83,21 @@ public class BasicPatterns {
         // inverted half pyramid with numbers
         // int n = 5;
         // for (int i = n; i > 0; i--) {
-        //     for (int j = 1; j <= i; j++) {
-        //         System.out.print(j + " ");
-        //     }
-        //     System.out.println();
+        // for (int j = 1; j <= i; j++) {
+        // System.out.print(j + " ");
+        // }
+        // System.out.println();
         // }
 
-        
+        // floyd's triangle
+        int n = 5;
+        int result = 1;
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(result + " ");
+                result++;
+            }
+            System.out.println();
+        }
     }
 }
