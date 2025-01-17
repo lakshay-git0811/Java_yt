@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class functions {
+public class function_01 {
     public static void printMyName(String name) {
         System.out.println(name);
         return;
