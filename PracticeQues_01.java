@@ -65,20 +65,40 @@ public class PracticeQues_01 {
     // 4. Write a function that takes in the radius as input and returns the
     // circumference of a circle.
 
-    public static void returnCircumference(int rad) {
-        if (rad < 0) {
+    // public static void returnCircumference(int rad) {
+    // if (rad < 0) {
+    // System.out.println("Invalid input");
+    // } else {
+    // int circumference = 2 * 22 / 7 * rad;
+    // System.out.println("Circumference: " + circumference);
+    // }
+    // }
+    // public static void main(String[] args) {
+    // Scanner sc = new Scanner(System.in);
+    // int rad = sc.nextInt();
+    // returnCircumference(rad);
+    // sc.close();
+    // }
+
+    // 5. Write a function that takes in age as input and returns if that person is
+    // eligible to vote or not. A person of age > 18 is eligible to vote.
+
+    public static void isEligible(int age) {
+        if (age < 0) {
             System.out.println("Invalid input");
         } else {
-            int circumference = 2 * 22 / 7 * rad;
-            System.out.println("Circumference: " + circumference);
+            if (age > 18) {
+                System.out.println("Eligible to vote");
+            } else {
+                System.out.println("Not eligible to vote");
+            }
         }
     }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int rad = sc.nextInt();
-        returnCircumference(rad);
+        int age = sc.nextInt();
+        isEligible(age);
         sc.close();
     }
-
 }
