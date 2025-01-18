@@ -42,24 +42,42 @@ public class PracticeQues_01 {
     // sc.close();
     // }
 
-    // Write a function which takes in 2 numbers and returns the greater of those
+    // 3. Write a function which takes in 2 numbers and returns the greater of those
     // two.
 
-    public static void returnGreater(int a, int b) {
-        if (a > b) {
-            System.out.println("Greater: " + a);
-        } else if (b > a) {
-            System.out.println("Greater: " + b);
+    // public static void returnGreater(int a, int b) {
+    // if (a > b) {
+    // System.out.println("Greater: " + a);
+    // } else if (b > a) {
+    // System.out.println("Greater: " + b);
+    // } else {
+    // System.out.println("Both are equal");
+    // }
+    // }
+    // public static void main(String[] args) {
+    // Scanner sc = new Scanner(System.in);
+    // int a = sc.nextInt();
+    // int b = sc.nextInt();
+    // returnGreater(a, b);
+    // sc.close();
+    // }
+
+    // 4. Write a function that takes in the radius as input and returns the
+    // circumference of a circle.
+
+    public static void returnCircumference(int rad) {
+        if (rad < 0) {
+            System.out.println("Invalid input");
         } else {
-            System.out.println("Both are equal");
+            int circumference = 2 * 22 / 7 * rad;
+            System.out.println("Circumference: " + circumference);
         }
     }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        returnGreater(a, b);
+        int rad = sc.nextInt();
+        returnCircumference(rad);
         sc.close();
     }
 
