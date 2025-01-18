@@ -101,16 +101,41 @@ public class PracticeQues_01 {
     // sc.close();
     // }
 
-
     // 6. Write an infinite loop using do while condition.
     // public static void main(String[] args) {
-    //     int n = 1;
-    //     do {
-    //         System.out.println(n);
-    //         n++;
-    //     } while (n > 0);
+    // int n = 1;
+    // do {
+    // System.out.println(n);
+    // n++;
+    // } while (n > 0);
     // }
 
-    
+    // 7. Write a program to enter the numbers till the user wants and at the end it
+    // should display the count of positive, negative and zeros entered.
+    // public static void countParameters(int maxValue) {
 
+    // }
+
+    // public static void main(String[] args) {
+
+    // }
+
+    // 8. Two numbers are entered by the user, x and n. Write a function to find the
+    // value of one number raised to the power of another i.e. xn.
+
+    public static void calculateNumExpo(int x, int n) {
+        if (x > 0 && x > 0) {
+            System.out.println((int) Math.pow(x, n));
+        } else {
+            System.out.println("Invalid input");
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt();
+        int n = sc.nextInt();
+        calculateNumExpo(x, n);
+        sc.close();
+    }
 }
