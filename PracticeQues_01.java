@@ -21,24 +21,45 @@ public class PracticeQues_01 {
 
     // 2. Write a function to print the sum of all odd numbers from 1 to n.
 
-    public static void printSum(int n) {
-        if (n < 0) {
-            System.out.println("Invalid input");
-        } else {
-            int result = 0;
-            for (int i = 1; i <= n; i++) {
-                if (i % 2 != 0) {
-                    result = result + i;
-                }
-            }
-            System.out.println(result);
-        }
+    // public static void printSum(int n) {
+    // if (n < 0) {
+    // System.out.println("Invalid input");
+    // } else {
+    // int result = 0;
+    // for (int i = 1; i <= n; i++) {
+    // if (i % 2 != 0) {
+    // result = result + i;
+    // }
+    // }
+    // System.out.println(result);
+    // }
 
+    // }
+    // public static void main(String[] args) {
+    // Scanner sc = new Scanner(System.in);
+    // int n = sc.nextInt();
+    // printSum(n);
+    // sc.close();
+    // }
+
+    // Write a function which takes in 2 numbers and returns the greater of those
+    // two.
+
+    public static void returnGreater(int a, int b) {
+        if (a > b) {
+            System.out.println("Greater: " + a);
+        } else if (b > a) {
+            System.out.println("Greater: " + b);
+        } else {
+            System.out.println("Both are equal");
+        }
     }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        printSum(n);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        returnGreater(a, b);
         sc.close();
     }
 
