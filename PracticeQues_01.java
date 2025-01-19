@@ -139,8 +139,25 @@ public class PracticeQues_01 {
     // sc.close();
     // }
 
-    // 9. Write a function that calculates the Greatest Common Divisor of 2 numbers. 
+    // 9. Write a function that calculates the Greatest Common Divisor of 2 numbers.
 
-    
+    public static void greatestDivisor(int a, int b) {
+        int tempNum = Math.min(a, b);
+        int result = 0;
+        for (int i = 1; i <= tempNum; i++) {
+            if (a % i == 0 && b % i == 0) {
+                result = i;
+            }
+        }
+        System.out.println(result);
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        greatestDivisor(a, b);
+        sc.close();
+    }
 
 }
