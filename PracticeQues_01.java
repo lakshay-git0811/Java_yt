@@ -123,19 +123,24 @@ public class PracticeQues_01 {
     // 8. Two numbers are entered by the user, x and n. Write a function to find the
     // value of one number raised to the power of another i.e. xn.
 
-    public static void calculateNumExpo(int x, int n) {
-        if (x > 0 && x > 0) {
-            System.out.println((int) Math.pow(x, n));
-        } else {
-            System.out.println("Invalid input");
-        }
-    }
+    // public static void calculateNumExpo(int x, int n) {
+    // if (x > 0 && x > 0) {
+    // System.out.println((int) Math.pow(x, n));
+    // } else {
+    // System.out.println("Invalid input");
+    // }
+    // }
 
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int x = sc.nextInt();
-        int n = sc.nextInt();
-        calculateNumExpo(x, n);
-        sc.close();
-    }
+    // public static void main(String[] args) {
+    // Scanner sc = new Scanner(System.in);
+    // int x = sc.nextInt();
+    // int n = sc.nextInt();
+    // calculateNumExpo(x, n);
+    // sc.close();
+    // }
+
+    // 9. Write a function that calculates the Greatest Common Divisor of 2 numbers. 
+
+    
+
 }
