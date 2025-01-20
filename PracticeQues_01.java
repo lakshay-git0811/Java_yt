@@ -141,23 +141,45 @@ public class PracticeQues_01 {
 
     // 9. Write a function that calculates the Greatest Common Divisor of 2 numbers.
 
-    public static void greatestDivisor(int a, int b) {
-        int tempNum = Math.min(a, b);
-        int result = 0;
-        for (int i = 1; i <= tempNum; i++) {
-            if (a % i == 0 && b % i == 0) {
-                result = i;
-            }
+    // public static void greatestDivisor(int a, int b) {
+    // int tempNum = Math.min(a, b);
+    // int result = 0;
+    // for (int i = 1; i <= tempNum; i++) {
+    // if (a % i == 0 && b % i == 0) {
+    // result = i;
+    // }
+    // }
+    // System.out.println(result);
+    // }
+
+    // public static void main(String[] args) {
+    // Scanner sc = new Scanner(System.in);
+    // int a = sc.nextInt();
+    // int b = sc.nextInt();
+    // greatestDivisor(a, b);
+    // sc.close();
+    // }
+
+    // 10. Write a program to print Fibonacci series of n terms where n is input by
+    // user :
+    // 0 1 1 2 3 5 8 13 21 .....
+    // In the Fibonacci series, a number is the sum of the previous 2 numbers that
+    // came before it.
+    public static void fibonacciSeries(int n) {
+        int firstNum = 0;
+        int secondNum = 1;
+        for (int i = 0; i <= n; i++) {
+            System.out.print(firstNum + " ");
+            int nextNum = firstNum + secondNum;
+            firstNum = secondNum;
+            secondNum = nextNum;
         }
-        System.out.println(result);
     }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        greatestDivisor(a, b);
+        int n = sc.nextInt();
+        fibonacciSeries(n);
         sc.close();
     }
-
 }
