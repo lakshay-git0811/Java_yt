@@ -112,13 +112,48 @@ public class PracticeQues_01 {
 
     // 7. Write a program to enter the numbers till the user wants and at the end it
     // should display the count of positive, negative and zeros entered.
-    // public static void countParameters(int maxValue) {
+    // public static void countParameters() {
+    //     int positive = 0, negative = 0, zeroes = 0;
 
+    //     while (true) {
+    //         Scanner sc = new Scanner(System.in);
+    //         System.out.print("Enter Your num: ");
+    //         String input = sc.next();
+
+    //         if (input.equals("STOP") || input.equals("stop")) {
+    //             break;
+    //         }
+
+    //         int num;
+
+    //         try {
+    //             num = Integer.valueOf(input);
+    //         } catch (Exception e) {
+    //             System.out.println("Invalid Number");
+    //             continue;
+    //         }
+
+    //         if (num > 0) {
+    //             positive++;
+    //         } else if (num < 0) {
+    //             negative++;
+    //         } else if (num == 0) {
+    //             zeroes++;
+    //         }
+    //     }
+
+    //     System.out.print(
+    //             "You have entered " + positive + " Positive, " + negative + " Negative, and " + zeroes + " Zeros.");
+    // }
+
+    // public static void main(String[] args) {
+    //     countParameters();
     // }
 
     // public static void main(String[] args) {
 
     // }
+
 
     // 8. Two numbers are entered by the user, x and n. Write a function to find the
     // value of one number raised to the power of another i.e. xn.
@@ -168,7 +203,7 @@ public class PracticeQues_01 {
     public static void fibonacciSeries(int n) {
         int firstNum = 0;
         int secondNum = 1;
-        for (int i = 0; i <= n; i++) {
+        for (int i = 0; i <= n-1; i++) {
             System.out.print(firstNum + " ");
             int nextNum = firstNum + secondNum;
             firstNum = secondNum;
@@ -177,9 +212,9 @@ public class PracticeQues_01 {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        fibonacciSeries(n);
-        sc.close();
+    Scanner sc = new Scanner(System.in);
+    int n = sc.nextInt();
+    fibonacciSeries(n);
+    sc.close();
     }
 }
